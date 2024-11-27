@@ -1,4 +1,4 @@
-# EFF-Python-Diceware
+# EFF Python Diceware Password Generator
 Generates a random set of words from the EFF's Large Wordlist to be used for passwords using Python
 
 Uses system for Random Number Generation
