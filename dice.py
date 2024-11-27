@@ -1,10 +1,8 @@
 import random
 rng = random.SystemRandom()
 
-
 def roll():
     return rng.randint(1, 6)
-
 
 def rollx5():
     num5 = ''
@@ -13,7 +11,6 @@ def rollx5():
         count += 1
     return num5
 
-
 def wordDict():
     d = {}
     with open('eff_large_wordlist.txt') as f:
@@ -21,7 +18,6 @@ def wordDict():
             (key, val) = line.split()
             d[str(key)] = val
     return d
-
 
 def genWords(wordCount = int(input("Enter number of words to generate: "))):
     d = wordDict()
@@ -34,6 +30,5 @@ def genWords(wordCount = int(input("Enter number of words to generate: "))):
         wordKey = rollx5()
         words += str(d.get(wordKey))
     print(words)
-
 
 genWords()
