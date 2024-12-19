@@ -13,8 +13,7 @@ def wordDict():
             return {key: val for key, val in (line.strip().split() for line in f)}
 
 def genWords(wordCount = int(input("Enter number of words to generate: "))):
-    words = ' '.join([wordDict().get(str(rollx5())) for _ in range(wordCount)])
-    print(words)
+    print(' '.join([wordDict().get(str(rollx5())) for _ in range(wordCount)]))
 
 if __name__ == '__main__':
     genWords()
