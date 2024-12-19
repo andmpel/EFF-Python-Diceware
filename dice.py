@@ -14,4 +14,4 @@ def genWords(word_dict, wordCount):
     print(' '.join([word_dict.get(str(rollx5())) for _ in range(wordCount)]))
 
 if __name__ == '__main__':
-    genWords(word_dict = wordDict(), word_count = int(input("Enter number of words to generate: ")))
+    genWords(word_dict = wordDict(), wordCount = int(input("Enter number of words to generate: ")))
